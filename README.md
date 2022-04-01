@@ -1,5 +1,5 @@
 # Client Manager made with Django ✨
-![index]() ![list]()
+![index]('https://github.com/Daniels-not/clientzoomer/blob/master/1.png') ![list]()
 
 ## Instructions 📑
 
