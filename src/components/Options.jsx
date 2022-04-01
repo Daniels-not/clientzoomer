@@ -67,10 +67,10 @@ const Options = ({ children }) => {
                 <Typography gutterBottom variant="h6">Account Info</Typography>
                 <TextField label="Name" value={name} onChange={(e) => setName(e.target.value)} fullWidth />
                 <CopyToClipboard text={me} className={classes.margin}>
-                  <Button variant="contained" color="primary" fullWidth startIcon={<Assignment fontSize="large" />}>
-                    Copy Your ID
-                  </Button>
-                </CopyToClipboard>
+                <Button variant="contained" color="primary" fullWidth startIcon={<Assignment fontSize="large" />}>
+                  Copy Your ID
+                </Button>
+              </CopyToClipboard>
               </Grid>
               <Grid item xs={12} md={6} className={classes.padding}>
                 <Typography gutterBottom variant="h6">Make a call</Typography>

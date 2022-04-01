@@ -41,29 +41,24 @@ export const VideoPlayer = () => {
   return (
     <div>
       {/* our video player */}
-      <Grid container className={useStyles().gridContainer}>
-        {
-          stream && (
-              <Grid item xs={12} sm={6}>
-                <Paper className={classes.paper}>
-                <Typography variant="h5" gutterButton>{ name || 'Name 😀' }</Typography>
-                <video autoPlay playsInline muted className={classes.video} ref={myVideo}/>
-              </Paper>
-            </Grid>
-          )
-        }
-        {/* user video */}
-        {
-          callAccepted && !callEnded && (
-            <Grid item xs={12} sm={6}>
-              <Paper className={classes().paper}>
-                <Typography variant="h5">{ call.name || 'Name 😀' }</Typography>
-                <video autoPlay playsInline muted className={classes().video} ref={userVideo}/>
-              </Paper>
-            </Grid>
-          )
-        }
-      </Grid>
+      <Grid container className={classes.gridContainer}>
+      {stream && (
+        <Paper className={classes.paper}>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h5" gutterBottom>{name || 'Name'}</Typography>
+            <video playsInline muted ref={myVideo} autoPlay className={classes.video} />
+          </Grid>
+        </Paper>
+      )}
+      {callAccepted && !callEnded && (
+        <Paper className={classes.paper}>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h5" gutterBottom>{call.name || 'Name'}</Typography>
+            <video playsInline ref={userVideo} autoPlay className={classes.video} />
+          </Grid>
+        </Paper>
+      )}
+    </Grid>
     </div>
   )
 }
