@@ -1,4 +1,4 @@
-# Client Manager made with Django ✨
+# Client zoomer ✨
 ![index](https://github.com/Daniels-not/clientzoomer/blob/master/1.png) 
 ![list](https://github.com/Daniels-not/clientzoomer/blob/master/2.png)
 
